@@ -1,9 +1,9 @@
 import React from 'react'
 import { View, Text, StyleSheet, ActivityIndicator } from 'react-native'
 
-const Loading = ({isVisible,text}) => {
+const Loading = ({text}) => {
   return (
-   
+         
          <View style={styles.overlay}>
              <ActivityIndicator style={{marginVertical : 10}} size= "large" color="#442484"/>
               {text && <Text style={styles.texto}>{text}</Text>}
@@ -14,7 +14,7 @@ const Loading = ({isVisible,text}) => {
 
 const styles = StyleSheet.create({
     overlay : {
-        marginTop : 200,
+        marginTop : 20,
         alignSelf : 'center',
         height: 100,
         width:  200,
