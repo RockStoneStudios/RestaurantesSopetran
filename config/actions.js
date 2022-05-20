@@ -14,7 +14,7 @@ export const isUserLogged = () =>{
     
 };
 
-
+// Devuelve si el usuario esta logueado en el momento
 export const getCurrentUser = () =>{
     return  auth.currentUser;
 }
